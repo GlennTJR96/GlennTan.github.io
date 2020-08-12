@@ -56,7 +56,7 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function () {
-    // Typed.JS
+    // Typed.JS function.
     $(function () {
         $(".TypedJs").typed({
             strings: ["a Computing Student","a Web Developer", "a Tech Enthusiast"],
