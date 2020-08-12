@@ -59,7 +59,7 @@ $(document).ready(function () {
     // Typed.JS function.
     $(function () {
         $(".TypedJs").typed({
-            strings: ["a Computing Student","a Web Developer", "a Tech Enthusiast"],
+            strings: ["Computing Student","Web Developer", "Tech Enthusiast"],
             typeSpeed: 15,
             loop: true,
             backDelay: 2500
