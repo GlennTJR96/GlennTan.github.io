@@ -44,15 +44,25 @@
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
+            $("#mainNav").addClass("navbar-shrink opaque");
         } else {
-            $("#mainNav").removeClass("navbar-shrink");
+            $("#mainNav").removeClass("navbar-shrink opaque");
+
         }
     };
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    /*$(window).scroll(function() {
+
+        if ($(this).scrollTop() > 450) {
+           $('nav').stop().fadeIn(800); 
+       } else {$('nav').stop().fadeOut(800);
+        };
+    });   */
+
 })(jQuery); // End of use strict
 
 $(document).ready(function () {
