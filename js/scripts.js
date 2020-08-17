@@ -45,8 +45,10 @@
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink opaque");
+            $(".nav-link").css("color","white")
         } else {
             $("#mainNav").removeClass("navbar-shrink opaque");
+            $(".nav-link").css("color","black");
 
         }
     };
@@ -60,8 +62,11 @@
 // Wait for window load
 $(window).on('load',function () {
     // Animate loader off screen
-    $(".se-pre-con").delay(0).fadeOut("slow");
+    $(".se-pre-con").fadeOut("slow");
 
+});
+
+$(document).ready(function () {
     // Typed.JS function.
     $(function () {
         $(".TypedJs").typed({
@@ -71,11 +76,6 @@ $(window).on('load',function () {
             backDelay: 2500
         });
     });
-
-});
-
-$(document).ready(function () {
-    
 
     $(function () {
         new WOW().init();
