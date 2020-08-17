@@ -10455,8 +10455,8 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 20rem;
+  height: 20rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4 {
@@ -10466,7 +10466,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.jpg");
+  /*background-image: url("../assets/img/map-image.jpg");*/
   background-repeat: no-repeat;
   background-position: center;
 }
