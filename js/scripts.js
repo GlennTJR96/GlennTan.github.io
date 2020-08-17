@@ -54,27 +54,28 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-
-    /*$(window).scroll(function() {
-
-        if ($(this).scrollTop() > 450) {
-           $('nav').stop().fadeIn(800); 
-       } else {$('nav').stop().fadeOut(800);
-        };
-    });   */
-
 })(jQuery); // End of use strict
 
-$(document).ready(function () {
+//paste this code under the head tag or in a separate js file.
+// Wait for window load
+$(window).on('load',function () {
+    // Animate loader off screen
+    $(".se-pre-con").delay(0).fadeOut("slow");
+
     // Typed.JS function.
     $(function () {
         $(".TypedJs").typed({
-            strings: ["Computing Student","Web Developer", "Tech Enthusiast"],
+            strings: ["Computing Student", "Web Developer", "Tech Enthusiast"],
             typeSpeed: 15,
             loop: true,
             backDelay: 2500
         });
     });
+
+});
+
+$(document).ready(function () {
+    
 
     $(function () {
         new WOW().init();
