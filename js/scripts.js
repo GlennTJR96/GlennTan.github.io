@@ -65,4 +65,8 @@ $(document).ready(function () {
             backDelay: 2500
         });
     });
+
+    $(function () {
+        new WOW().init();
+    })
 });
